@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>weather</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <div id="header">
+        <div id="video-area">
+            <video id="video" poster="background/sky.png" playsinline webkit-playsinline muted autoplay loop>
+                <source src="background/sky.mp4" type="video/mp4">
+            </video>
+        </div>
+        <h1>Tenki Yoho</h1>
+        <div id="time">【現在時刻】00:00</div>
+        <div id="locate">【現在地】-----</div>
+        <div id="day_list">
+            <div id="day0" onclick="get_weather(this)"></div>
+            <div id="day1" onclick="get_weather(this)"></div>
+            <div id="day2" onclick="get_weather(this)"></div>
+            <div id="day3" onclick="get_weather(this)"></div>
+            <div id="day4" onclick="get_weather(this)"></div>
+            <div id="day5" onclick="get_weather(this)"></div>
+        </div>
+        <div id="border"></div>
+        <div id="view">
+            <div id="day_view">日付を選択してください</div>
+            <div id="weather_view">
+                <div id="weather1">天気: -----</div>
+                <div id="weather2">最高気温: -----</div>
+                <div id="weather3">最低気温: -----</div>
+                <div id="weather4">平均気温: -----</div>
+                <div id="weather5">平均気温(体感): -----</div>
+            </div>
+        </div>
+        <div id="information_view">
+            <div id="information">===information===</div>
+        </div>
+
+        </header>
+
+        <!-- メインコンテンツ -->
+        <main>
+
+        </main>
+
+        <!-- フッター -->
+        <footer>
+
+        </footer>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
